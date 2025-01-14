@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: aliceblue;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(104, 59, 59);
+}
+
+h2 {
+    text-align: center;
+    color: rgb(104, 59, 59);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: rgb(170, 159, 108);
+    transition: all 0.3s ease-in-out;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+.menu ul li a:hover {
+    background-color: rgb(102, 58, 58);
+    color: white;
+    border-radius: 5px;
+}
+
+.hidden-text {
+    display: none; /* Cache le texte au départ */
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer horizontalement */
+    text-align: center;
+}
+
+.hidden-text {
+    display: none; /* Cache le texte au départ */
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+img {
+    width: 300px; /* Ajustez la taille de l'image */
+    cursor: pointer; /* Indique que l'image est cliquable */
+    transition: transform 0.2s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1); /* Effet visuel au survol */
+}
+
+#hide-text {
+    background-color: #D2B48C; /* Marron clair */
+    color: #fff; /* Texte blanc */
+    border: none; /* Enlever la bordure */
+    padding: 10px 20px; /* Ajout de marges internes */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 16px; /* Taille du texte */
+    cursor: pointer; /* Curseur pointeur pour l'interaction */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animation fluide */
+}
+
+/* Effet au survol */
+#hide-text:hover {
+    background-color: #C19A6B; /* Marron un peu plus foncé */
+    transform: scale(1.05); /* Léger zoom */
+}
+
+/* Effet au clic */
+#hide-text:active {
+    transform: scale(0.95); /* Léger rétrécissement */
+}
+
+button {
+    margin-top: 10px; /* Ajoute un espace au-dessus du bouton */
+    background-color: #D2B48C; /* Marron clair */
+    color: #fff; /* Texte blanc */
+    border: none; /* Supprime la bordure */
+    padding: 8px 15px; /* Ajuste les marges internes */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur en pointeur */
+    font-size: 14px; /* Taille de texte */
+    transition: background-color 0.3s ease; /* Animation sur hover */
+}
+
+button:hover {
+    background-color: #C19A6B; /* Couleur plus foncée au survol */
+}
+
+#latest-chroniques {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.chronique {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.chronique h3 {
+    margin: 0 0 10px;
+}
+
+.chronique p {
+    margin: 0 0 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.chronique a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.chronique a:hover {
+    text-decoration: underline;
+}
+
+/* Section des coups de cœur */
+#latest-coups-de-coeur {
+    margin-top: 30px;
+    text-align: center; /* Centrer tout le contenu */
+}
+
+#latest-coups-de-coeur h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.coup-de-coeur {
+    display: inline-block; /* Aligner les couvertures côte à côte */
+    margin: 10px;
+    text-align: center;
+}
+
+.coup-de-coeur img {
+    width: 150px; /* Largeur fixe pour les images */
+    height: auto; /* Conserver les proportions */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Effet hover */
+}
+
+.coup-de-coeur img:hover {
+    transform: scale(1.1); /* Agrandir légèrement au survol */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Augmenter l'ombre au survol */
+}
+
+/* Style pour les liens sociaux */
+.social-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #FF6D6D; /* Couleur rougeâtre pour attirer l'attention */
+    color: #fff; /* Texte en blanc */
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Effet au survol */
+.social-link:hover {
+    background-color: #FF4C4C; /* Couleur légèrement plus sombre */
+    transform: translateY(-3px); /* Déplacement vers le haut */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Augmenter l'ombre */
+}
