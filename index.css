@@ -240,3 +240,20 @@ img {
     max-width: 1200px; /* Ne dépasse pas 1200px sur les écrans larges */
     margin: 0 auto; /* Centre le contenu horizontalement */
 }
+
+.bouton-wattpad {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #D2B48C; /* Couleur orange de Wattpad */
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bouton-wattpad:hover {
+    background-color: #6b3709; /* Couleur légèrement plus foncée au survol */
+}
